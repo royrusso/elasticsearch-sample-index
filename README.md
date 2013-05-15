@@ -3,7 +3,7 @@ ElasticSearch Sample Index Data Script (PHP)
 
 This sample script reads from the included CSV file and adds 150 'superhero' documents to an index 'comicbook'.
 
-I needed a way to quickly create indexes/shards and fill them with documents for my [ElasticSearch Monitoring solution](https://github.com/royrusso/elasticsearch-HQ, "Elastic HQ").
+I needed a way to quickly create indexes/shards and fill them with documents for my [ElasticSearch Monitoring solution](https://github.com/royrusso/elasticsearch-HQ, "Elastic HQ"), and so this project was born.
 
 Usage
 --------
