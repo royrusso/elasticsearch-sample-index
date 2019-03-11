@@ -11,14 +11,17 @@ Usage
 * Create the Index:
 
 ```
-curl -XPUT 'http://localhost:9200/comicbook/' -d '{
-    "settings" : {
-        "index" : {
-            "number_of_shards" : 3,
-            "number_of_replicas" : 1
-        }
-    }
-}'
+curl -H 'Content-Type: application/json' \
+  -X PUT \
+  -d '{
+      "settings" : {
+          "index" : {
+              "number_of_shards" : 3,
+              "number_of_replicas" : 1
+          }
+      }
+  }' \
+  http://localhost:9200/comicbook/
 ```
 
 * From command line, execute the script:
