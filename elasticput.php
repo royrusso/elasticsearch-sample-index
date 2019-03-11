@@ -32,6 +32,7 @@ if (($handle = fopen('indexme.csv', "r")) !== FALSE) {
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_FORBID_REUSE, 0);
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'PUT');
+        curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-type: application/json'));
         curl_setopt($ch, CURLOPT_POSTFIELDS, $jsonData);
         $response = curl_exec($ch);
         echo 'RESPONSE: ' . $response . "\n\n";
